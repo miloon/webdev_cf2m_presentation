@@ -14,7 +14,7 @@
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -23,101 +23,92 @@
 </head><!--/head-->
 <body>
 <?php
-    include "header.php";
+include "header.php";
 ?>
 
-    <section id="title" class="pumkin">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h1>Portfolio</h1>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
-                </div>
-                <div class="col-sm-6">
-                    <ul class="breadcrumb pull-right">
-                        <li><a href="index.php">Home</a></li>
-                        <li class="active">Portfolio</li>
-                    </ul>
-                </div>
+<section id="title" class="pumkin">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>PHP ? C'est quoi ce machin ?</h1>
+                <p>Et bah on va voir ça tout de suite !</p>
+            </div>
+            <div class="col-sm-6">
+                <ul class="breadcrumb pull-right">
+                    <li><a href="index.php">Home</a></li>
+                    <li class="active">PHP</li>
+                </ul>
             </div>
         </div>
-    </section><!--/#title--> 
+    </div>
+</section><!--/#title-->
 
-    <section id="portfolio" class="container">
-        <ul class="portfolio-filter">
-            <li><a class="btn btn-default active" href="#" data-filter="*">All</a></li>
-            <li><a class="btn btn-default" href="#" data-filter=".bootstrap">Bootstrap</a></li>
-            <li><a class="btn btn-default" href="#" data-filter=".html">HTML</a></li>
-            <li><a class="btn btn-default" href="#" data-filter=".wordpress">Wordpress</a></li>
-        </ul><!--/#portfolio-filter-->
+<section id="portfolio" class="container">
+    <article>
+        <p>
+            Dans cette partie nous allons vous présenter comment PHP et MySql peuvent interagir ensemble.
+            La première chose à faire est de créer la base de données, c’est elle qui va stocker les données qu’on lui
+            renverra.
+            Pour créer une base de données il y a plusieurs méthodes, ici on va vous montrer comment le faire avec MySql
+            WorkBench.</p>
+        </article>
 
-        <ul class="portfolio-items col-3">
-            <li class="portfolio-item apps">
-                <div class="item-inner">
-                    <img src="images/portfolio/thumb/item1.jpg" alt="">
-                    <h5>Lorem ipsum dolor sit amet</h5>
-                    <div class="overlay">
-                        <a class="preview btn btn-danger" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>             
-                    </div>           
-                </div>           
-            </li><!--/.portfolio-item-->
-            <li class="portfolio-item joomla bootstrap">
-                <div class="item-inner">
-                    <img src="images/portfolio/thumb/item2.jpg" alt="">
-                    <h5>Lorem ipsum dolor sit amet</h5>
-                    <div class="overlay">
-                        <a class="preview btn btn-danger" href="images/portfolio/full/item2.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>              
-                    </div>           
-                </div>           
-            </li><!--/.portfolio-item-->
-            <li class="portfolio-item bootstrap wordpress">
-                <div class="item-inner">
-                    <img src="images/portfolio/thumb/item3.jpg" alt="">
-                    <h5>Lorem ipsum dolor sit amet</h5>
-                    <div class="overlay">
-                        <a class="preview btn btn-danger" href="images/portfolio/full/item3.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>        
-                    </div>           
-                </div>           
-            </li><!--/.portfolio-item-->
-            <li class="portfolio-item joomla wordpress apps">
-                <div class="item-inner">
-                    <img src="images/portfolio/thumb/item4.jpg" alt="">
-                    <h5>Lorem ipsum dolor sit amet</h5>
-                    <div class="overlay">
-                        <a class="preview btn btn-danger" href="images/portfolio/full/item4.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                    </div>           
-                </div>           
-            </li><!--/.portfolio-item-->
-            <li class="portfolio-item joomla html">
-                <div class="item-inner">
-                    <img src="images/portfolio/thumb/item5.jpg" alt="">
-                    <h5>Lorem ipsum dolor sit amet</h5>
-                    <div class="overlay">
-                        <a class="preview btn btn-danger" href="images/portfolio/full/item5.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                    </div>    
-                </div>       
-            </li><!--/.portfolio-item-->
-            <li class="portfolio-item wordpress html">
-                <div class="item-inner">
-                    <img src="images/portfolio/thumb/item6.jpg" alt="">
-                    <h5>Lorem ipsum dolor sit amet</h5>
-                    <div class="overlay">
-                        <a class="preview btn btn-danger" href="images/portfolio/full/item6.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>           
-                    </div>           
-                </div>           
-            </li><!--/.portfolio-item-->
+        <img class="img-responsive" src="images/image1.PNG"/>
+    <article>
+        <p>Commençons par créer un nouveau modèle, dans un premier temps il faut changer le nom de notre base de donnée
+            qui est de base « mydb ». Ensuite, il faut cliquer sur « Add Diagram » qui se trouve juste au-dessus.
+            Dans cette étape il faudra créer nos tables, pour cela il faut cliquer sur le 6ème bouton de la colonne de
+            gauche.</p>
+        </article>
+
+        <img class="img-responsive" src="images/image2.PNG"/>
+    <article>
+        <p> Quand notre table est créée il faut lui insérer des colonnes et tout cela se passe dans le menu qui se
+            trouve en bas. Il suffit de cliquer juste en dessous du menu. Un double clique et une colonne est créée.
+            Maintenant il faut la renommée et lui donner des attributs précis qui détermineront sa spécification.
+            Souvent, on crée une colonne nommée ID qui aura, dans la plupart des cas, les attributs : Primary key, Not
+            Null, Unique et Auto Increment.</p>
+        </article>
+
+        <img class="img-responsive" src="images/image3.PNG"/>
+    <article>
+        <p> Ensuite, il suffit de créer les colonnes qui correspondent à notre besoin. Dans notre cas, il en a
+            trois.</p>
+        <ul>
+            <li>lenom, qui correspond au nom de la personne qui laisse un commentaire</li>
+            <li>lecom, qui correspond au commentaire de la personne</li>
+            <li>ladate, qui correspond à la date à laquelle la personne à laisser le commentaire</li>
+            <p>Ces 3 colonnes, il faut encore les spécifiés, en disant ce qu’elles vont contenir. Par exemple du
+                texte, des chiffres, des caractères spéciaux, etc…
+            </p>
         </ul>
-    </section><!--/#portfolio-->
+        </article>
+        <img class="img-responsive" src="images/image4.PNG"/>
+    <article>
+        <p>Quand tout est prêt il faut aller dans « Database » et puis cliquer sur « Forward ingenier » .</p>
+        <p> Passons maintenant au php, dedans on pourra : Afficher, modifier, supprimer et bien plus encore. Pour ce
+            faire il faudra dans un premier temps se connecter à notre base de données. Pour ce faire il faudra
+            travailler avec une fonction appelée @mysqli_connect dans laquelle on a, au préalable, défini des constantes
+            correspondante aux données de notre base de données et on revoit tout ça dans une variable, mais on va trop
+            loin là.</p>
+        <p> Quand cela est fait, il est temps de travailler avec notre variable qui contient toute notre base de
+            données. Notre variable contient donc notre table « Commentaire » avec nos colonnes «lenom, lecom et ladate
+            ». Dans notre code PHP il suffira de lui dire d’afficher les éléments de notre variable.</p>
+        <p> Et c’est avec l’aide d’une boucle qu’on pourra afficher les données comme ci-dessous.
+        </p>
+        <a href="accueil.php" type="button" class="btn btn-success btn-lg">Lien vers le site</a>
+    </article>
+</section><!--/#portfolio-->
 
 
 <?php
 include 'footer.php';
 ?>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/main.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

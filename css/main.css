@@ -1087,3 +1087,10 @@ ul.faq li > div h3 {
   margin-top: 150px;
   margin-bottom: 150px;
 }
+
+
+#portfolio article {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.4em;
+}
