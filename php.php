@@ -26,7 +26,7 @@
     include "header.php";
 ?>
 
-    <section id="title" class="emerald">
+    <section id="title" class="pumkin">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
