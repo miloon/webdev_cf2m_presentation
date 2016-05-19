@@ -260,41 +260,67 @@
         </div>
     </section><!--/#recent-works-->
 
-    <section id="testimonial" class="alizarin">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="center">
-                        <h2>What the WebDev say</h2>
-                        <p>Quelques expressions courtantes entendues en classe.</p>
+<section id="testimonial" class="alizarin">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center">
+                    <h2>What the WebDev say</h2>
+                    <p>Quelques expressions courtantes entendues en classe.</p>
+                </div>
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <blockquote>
+                            <p>Et bien alors Jean-Michel ???</p>
+                            <small>Miloon <!--<cite title="Source Title">Source Title</cite>--></small>
+                        </blockquote>
+                        <blockquote>
+                            <p>...</p>
+                            <small>Samih <!-- <cite title="Source Title">Source Title</cite>--></small>
+                        </blockquote>
                     </div>
-                    <div class="gap"></div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <blockquote>
-                                <p>Et bien alors Jean-Michel ???</p>
-                                <small>Miloon <!--<cite title="Source Title">Source Title</cite>--></small>
-                            </blockquote>
-                            <blockquote>
-                                <p>...</p>
-                                <small>Samih <!-- <cite title="Source Title">Source Title</cite>--></small>
-                            </blockquote>
-                        </div>
-                        <div class="col-md-6">
-                            <blockquote>
-                                <p>La cuchara está rota</p>
-                                <small>Fede <!--<cite title="Source Title">Source Title</cite>--></small>
-                            </blockquote>
-                            <blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
-                            </blockquote>
-                        </div>
+                    <div class="col-md-6">
+                        <blockquote>
+                            <p>La cuchara está rota.</p>
+                            <small>Fede <!--<cite title="Source Title">Source Title</cite>--></small>
+                        </blockquote>
+                        <blockquote>
+                            <p>Pierre, tu peux venir s'il te plaît...</p>
+                            <small>Vince The Prince <!-- <cite title="Source Title">Source Title</cite>--></small>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-6">
+                        <blockquote>
+                            <p>Está muy bien aquí de la mañana.</p>
+                            <small>Florette <!--<cite title="Source Title">Source Title</cite>--></small>
+                        </blockquote>
+                        <blockquote>
+                            <p>Il fait trop chaud, vivement l'hiver !</p>
+                            <small>MikyMike <!-- <cite title="Source Title">Source Title</cite>--></small>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-6">
+                        <blockquote>
+                            <p>J'peux pas travailler s'il n'y a pas de chocolat.</p>
+                            <small>Hayat <!--<cite title="Source Title">Source Title</cite>--></small>
+                        </blockquote>
+                        <blockquote>
+                            <p>Eeeeeeeeeeeeeeuuuuuuuuuuuuuuuuh</p>
+                            <small>GuiGui <!-- <cite title="Source Title">Source Title</cite>--></small>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-6">
+                        <blockquote>
+                            <p>...fatalement...</p>
+                            <small>Panda <!--<cite title="Source Title">Source Title</cite>--></small>
+                        </blockquote>
+
                     </div>
                 </div>
             </div>
         </div>
-    </section><!--/#testimonial-->
+</section><!--/#testimonial-->
 
 <?php
 include 'footer.php';
