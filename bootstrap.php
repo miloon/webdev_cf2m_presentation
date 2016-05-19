@@ -147,7 +147,7 @@
             </div>        
             <div class="col-md-4 col-xs-6">
                 <div class="center">
-                    <p><img class="img-responsive img-thumbnail img-circle" src="images/blog/no.jpg" alt="" ></p>
+                    <p><img class="img-responsive img-thumbnail img-circle" src="images/blog/vince.png" alt="" ></p>
                     <h5>Vincent</h5>
                     <p></p>
                     <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
