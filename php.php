@@ -1,3 +1,40 @@
+<?php
+define("DB_HOST","localhost");
+define("DB_NAME","moncf2m_emily");
+define("DB_LOGIN","emily");
+define("DB_PASS","fm49c25sz84d3");
+define("DB_CHARSET","utf8");
+
+$mysqli = @mysqli_connect(DB_HOST,DB_LOGIN,DB_PASS,DB_NAME);
+
+if(mysqli_connect_error($mysqli)){
+
+    exit("Erreur : ".mysqli_connect_error($mysqli));
+}
+
+mysqli_set_charset($mysqli,DB_CHARSET);
+
+
+if(empty($_POST)) {
+    $sql = "SELECT * FROM cf2m_commentaire ORDER BY id;";
+
+    $recup = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
+
+    $nb = mysqli_num_rows($recup);
+
+}else{
+    $lenom = htmlspecialchars(strip_tags(trim($_POST['lenom'])),ENT_QUOTES);
+    $lecom = htmlspecialchars(strip_tags(trim($_POST['lecom'])),ENT_QUOTES);
+    $date = date("j / n / Y ");
+
+    $sql = "INSERT INTO commentaire (lenom,lecom,ladate)
+            VALUES ('$lenom','$lecom','$date')";
+    mysqli_query($mysqli,$sql)or die(mysqli_error($mysqli));
+
+    $article_insere = "Ton commentaire a été inséré, merci $lenom ! ";
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,23 +119,63 @@ include "header.php";
                 texte, des chiffres, des caractères spéciaux, etc…
             </p>
         </ul>
-        </article>
-        <img class="img-responsive" src="images/image4.PNG"/>
-    <article>
         <p>Quand tout est prêt il faut aller dans « Database » et puis cliquer sur « Forward ingenier » .</p>
         <p> Passons maintenant au php, dedans on pourra : Afficher, modifier, supprimer et bien plus encore. Pour ce
             faire il faudra dans un premier temps se connecter à notre base de données. Pour ce faire il faudra
             travailler avec une fonction appelée @mysqli_connect dans laquelle on a, au préalable, défini des constantes
             correspondante aux données de notre base de données et on revoit tout ça dans une variable, mais on va trop
             loin là.</p>
+        </article>
+        <img class="img-responsive" src="images/image4.PNG"/>
+    <article>
+
         <p> Quand cela est fait, il est temps de travailler avec notre variable qui contient toute notre base de
             données. Notre variable contient donc notre table « Commentaire » avec nos colonnes «lenom, lecom et ladate
             ». Dans notre code PHP il suffira de lui dire d’afficher les éléments de notre variable.</p>
         <p> Et c’est avec l’aide d’une boucle qu’on pourra afficher les données comme ci-dessous.
         </p>
-        <a href="accueil.php" type="button" class="btn btn-success btn-lg">Lien vers le site</a>
+
     </article>
-</section><!--/#portfolio-->
+    </br>
+    <?php
+    if(empty($_POST)){
+
+
+        if($nb === 0){
+            echo "Pas encore de commentaire.";
+
+        }else{
+            while ($tab0 = mysqli_fetch_assoc($recup)){
+
+                echo "<h3>" . $tab0['lenom'] . "</br>" . "</h3>";
+                echo "<div id=date>" . "Le " . $tab0['ladate'] . "</div>" . "</br>";
+                echo "<div id=com>" . "<p>" . $tab0['lecom'] . "</p>" . "</div>" . "</br>";
+                echo "<hr/>";
+            }
+        }
+        ?>
+        <div id="adcomment">
+            <h2>
+                Ajoutez un commentaire
+            </h2>
+            <form action="" name="commentaire" method="POST">
+                <input type="text" name="lenom" placeholder="Votre nom" id="" required/><br/></br>
+                <textarea name="lecom" placeholder="Votre commentaire" cols="40" rows="6" required></textarea><br/>
+
+                <input type="submit" value="Envoyer"/><br/>
+
+            </form>
+
+        </div>
+        <?php
+    }else{
+        header("Location: ./");
+    }
+    ?>
+
+    </div>
+
+</section>
 
 
 <?php
@@ -110,5 +187,6 @@ include 'footer.php';
 <script src="js/jquery.prettyPhoto.js"></script>
 <script src="js/jquery.isotope.min.js"></script>
 <script src="js/main.js"></script>
+
 </body>
 </html>

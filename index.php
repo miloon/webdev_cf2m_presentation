@@ -147,7 +147,7 @@
                                                     Fede
                                                 </h5>
                                                 <div class="overlay">
-                                                    <a class="preview btn btn-danger" title="Malesuada fames ac turpis egestas" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                    <a class="preview btn btn-danger" title="Portfolio de Fede" href="http://federico.moncf2m.be/"><i class="icon-eye-open"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -160,7 +160,7 @@
                                                     Guillaume
                                                 </h5>
                                                 <div class="overlay">
-                                                    <a class="preview btn btn-danger" title="Malesuada fames ac turpis egestas" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                    <a class="preview btn btn-danger" title="Portfolio de Guillaume" href="http://guillaume.moncf2m.be/"><i class="icon-eye-open"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -173,7 +173,7 @@
                                                     Emily
                                                 </h5>
                                                 <div class="overlay">
-                                                    <a class="preview btn btn-danger" title="Malesuada fames ac turpis egestas" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                    <a class="preview btn btn-danger" title="Portfolio d'Emily" href="http://emily.moncf2m.be/"><i class="icon-eye-open"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -190,7 +190,7 @@
                                                     Florian
                                                 </h5>
                                                 <div class="overlay">
-                                                    <a class="preview btn btn-danger" title="Malesuada fames ac turpis egestas" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                    <a class="preview btn btn-danger" title="Portfolio de Florian" href="http://florian.moncf2m.be/"><i class="icon-eye-open"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -203,7 +203,7 @@
                                                     Vincent
                                                 </h5>
                                                 <div class="overlay">
-                                                    <a class="preview btn btn-danger" title="Malesuada fames ac turpis egestas" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                    <a class="preview btn btn-danger" title="Portfolio de Vincent" href="http://vincent.moncf2m.be/"><i class="icon-eye-open"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -216,7 +216,7 @@
                                                     Samih
                                                 </h5>
                                                 <div class="overlay">
-                                                    <a class="preview btn btn-danger" title="Malesuada fames ac turpis egestas" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                    <a class="preview btn btn-danger" title="Portfolio de Samih" href="http://samih.moncf2m.be/a/"><i class="icon-eye-open"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -233,7 +233,7 @@
                                                     Sylvie
                                                 </h5>
                                                 <div class="overlay">
-                                                    <a class="preview btn btn-danger" title="Malesuada fames ac turpis egestas" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                    <a class="preview btn btn-danger" title="Portfolio de Sylvie" href="http://sylvie.moncf2m.be/Mission_to_Mars/"><i class="icon-eye-open"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -246,7 +246,7 @@
                                                     Hayat
                                                 </h5>
                                                 <div class="overlay">
-                                                    <a class="preview btn btn-danger" title="Malesuada fames ac turpis egestas" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                    <a class="preview btn btn-danger" title="Portfolio d'Hayat" href="http://hayat.moncf2m.be/"><i class="icon-eye-open"></i></a>
                                                 </div>
                                             </div>
                                         </div>

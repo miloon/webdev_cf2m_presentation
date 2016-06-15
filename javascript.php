@@ -11,6 +11,7 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+	<script src="script.php"></script>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -20,6 +21,10 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	
+	<style>
+	#juego:hover{text-decoration:underline}
+	</style>
 </head><!--/head-->
 <body>
 <?php
@@ -30,13 +35,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <h1>Services</h1>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+                    <h1>Javascript</h1>
+                    <p>Yeah ! C'est classy comme nom, mais ça sert à quoi ?</p>
                 </div>
                 <div class="col-sm-6">
                     <ul class="breadcrumb pull-right">
                         <li><a href="index.php">Home</a></li>
-                        <li class="active">Services</li>
+                        <li class="active">Javascript</li>
                     </ul>
                 </div>
             </div>
@@ -48,101 +53,41 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="center gap">
-                        <h2>What we do</h2>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <h1>Le pendu</h2>
+                        <p>On a développé un petit jeu en javascript pour nous (et vous) amuser et pour démontrer notre acquis en javascript</p>
+						<div id="pendu">
+							<img id="penduimg" src="image/pendu1.png" /><br/>
+							<div id="motatrouver" style="margin-left:40px;font-size:30px;"></div><br/><br/>
+							<input type="text" id="motecrit" onkeydown = "if(event.keyCode === 13){verif();}"/><br/>
+							<br/>
+							<button type="button" class="btn btn-success" onclick="newgame();" style="cursor: pointer">Nouvelle partie (Mot Aléatoire)</button><br/><br/>
+							<button type="button" class="btn btn-success" onclick="newgamemot();" style="cursor: pointer">Nouvelle partie (Mot écrit)</button><br/>
+						</div>
                     </div>                
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="media">
-                        <div class="pull-left">
-                            <i class="icon-windows icon-md"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">Windows Development</h3>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-                        </div>
-                    </div>
-                </div><!--/.col-md-4-->
-                <div class="col-md-4 col-sm-6">
-                    <div class="media">
-                        <div class="pull-left">
-                            <i class="icon-android icon-md"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">Android Development</h3>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-                        </div>
-                    </div>
-                </div><!--/.col-md-4-->
-                <div class="col-md-4 col-sm-6">
-                    <div class="media">
-                        <div class="pull-left">
-                            <i class="icon-apple icon-md"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">iOS Development</h3>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-                        </div>
-                    </div>
-                </div><!--/.col-md-4-->
-            </div><!--/.row-->
+            
             <div class="gap"></div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="media">
-                        <div class="pull-left">
-                            <i class="icon-linux icon-md"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">Linux Development</h3>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-                        </div>
-                    </div>
-                </div><!--/.col-md-4-->
-                <div class="col-md-4 col-sm-6">
-                    <div class="media">
-                        <div class="pull-left">
-                            <i class="icon-dribbble icon-md"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">Graphic Design</h3>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-                        </div>
-                    </div>
-                </div><!--/.col-md-4-->
-                <div class="col-md-4 col-sm-6">
-                    <div class="media">
-                        <div class="pull-left">
-                            <i class="icon-google-plus icon-md"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">SEO Services</h3>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-                        </div>
-                    </div>
-                </div><!--/.col-md-4-->
-            </div><!--/.row-->
+            
             <hr>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="center">
-                        <h2>What our clients say</h2>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <h2>Opinions de nos collèges</h2>
+                        
                     </div>
                     <div class="gap"></div>
                     <div class="row">
                         <div class="col-md-6">
                             <blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                                <p>C'est le mieux jeu de l'histoire.</p>
+                                <small>Fede<cite title="Source Title"></cite></small>
                             </blockquote>
                         </div>
                         <div class="col-md-6">
                             <blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                                <p>Je peux pas arrêter de jouer, j'ai dormis que 5 heures en tout la semaine àa cause de Le pendu!</p>
+                                <small>Sylvie <cite title="Source Title"></cite></small>
                             </blockquote>
                         </div>
                     </div>
